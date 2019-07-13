@@ -91,4 +91,5 @@ def checkout(cart, coupons)
   end
   
   #puts finalCart
+  return total
 end
