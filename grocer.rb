@@ -83,6 +83,10 @@ def checkout(cart, coupons)
   total = 0
   consolidated_cart =consolidate_cart(cart)
   finalCart = apply_clearance(apply_coupons(consolidated_cart, coupons))
+  finalCart.each do |item, value|
+    puts item
+    puts value
+  end
   
-  puts finalCart
+  #puts finalCart
 end
